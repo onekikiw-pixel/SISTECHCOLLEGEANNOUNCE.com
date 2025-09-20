@@ -1,0 +1,19 @@
+/* style.css - simple, responsive */
+:root { --blue: #2b6cb0; --muted: #6b7280; --card: #ffffff; --bg: #f7fafc; }
+* { box-sizing: border-box; }
+body { font-family: Inter, Arial, sans-serif; margin:0; background:var(--bg); color:#1f2937; }
+.container { max-width:960px; margin:28px auto; padding:18px; }
+header { display:flex; justify-content:space-between; align-items:center; margin-bottom:18px; }
+h1 { margin:0; font-size:24px; color:var(--blue); }
+.nav { display:flex; gap:12px; align-items:center; }
+.btn { background:var(--blue); color:#fff; padding:8px 12px; border-radius:8px; text-decoration:none; display:inline-block; }
+.card { background:var(--card); padding:14px; border-radius:10px; box-shadow: 0 3px 8px rgba(15,23,42,0.06); margin-bottom:12px; }
+.grid { display:grid; gap:12px; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); }
+form input, form textarea, form select { width:100%; padding:8px; margin:6px 0 12px 0; border:1px solid #e5e7eb; border-radius:8px; }
+label { font-weight:600; display:block; margin-top:8px; color:#374151; }
+footer { text-align:center; color:var(--muted); margin-top:22px; font-size:14px; }
+.meta { font-size:13px; color:var(--muted); margin-top:6px; }
+.kinds { display:flex; gap:8px; margin-bottom:12px; }
+.kind { padding:6px 10px; border-radius:999px; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,0.04); font-size:13px; }
+.danger { background:#ffeaea; color:#9b1c1c; }
+@media (max-width:520px){ header { flex-direction:column; align-items:flex-start; gap:8px; } }
